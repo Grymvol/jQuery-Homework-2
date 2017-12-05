@@ -27,23 +27,23 @@
 
     $(".btn-right").click(function() {
       $(".correct-msg").slideDown();
+      $(".btn").removeClass("active");
+        $(this).addClass("active");
+      $(".wrong-msg").hide();
     });
 
     $(".btn-wrong").click(function() {
       $(".wrong-msg").slideDown();
-    });
-
-    $(".btn-wrong").click(function() {
+      $(".btn").removeClass("active");
+        $(this).addClass("active");
       $(".correct-msg").hide();
     });
 
-    $(".btn-right").click(function() {
-      $(".wrong-msg").hide();
-    });
 
-    $(".btn").on("click", function() {
-      $(this).addClass("active");
-    });
+
+
+
+
 
 
 
